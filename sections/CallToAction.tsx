@@ -1,16 +1,16 @@
-"use client";
-import ArrowRight from "@/assets/arrow-right.svg";
-import starImage from "@/assets/star.png";
-import springImage from "@/assets/spring.png";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+'use client';
+import ArrowRight from '@/assets/arrow-right.svg';
+import starImage from '@/assets/star.png';
+import springImage from '@/assets/spring.png';
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export const CallToAction = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"],
+    offset: ['start end', 'end start'],
   });
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
@@ -49,7 +49,7 @@ export const CallToAction = () => {
           <button className="btn btn-primary">Get for free</button>
           <button className="btn btn-text gap-1">
             <span>Learn more</span>
-            <ArrowRight className="h-5 w-5" />
+            <Image src={ArrowRight} alt="arrow" width={20} height={20} />
           </button>
         </div>
       </div>
