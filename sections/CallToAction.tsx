@@ -1,5 +1,5 @@
 'use client';
-import ArrowRight from '@/assets/arrow-right.svg';
+
 import starImage from '@/assets/star.png';
 import springImage from '@/assets/spring.png';
 import Image from 'next/image';
@@ -49,7 +49,7 @@ export const CallToAction = () => {
           <button className="btn btn-primary">Get for free</button>
           <button className="btn btn-text gap-1">
             <span>Learn more</span>
-            <Image src={ArrowRight} alt="arrow" width={20} height={20} />
+            <Image src="/arrow-right.svg" alt="arrow" width={20} height={20} />
           </button>
         </div>
       </div>
